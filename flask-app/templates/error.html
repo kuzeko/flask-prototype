@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+ERROR! {{ doc['title'] }}
+{% endblock %}
+
+{% block header %}
+    <h1 class="main-header">{{ doc['header'] }}</h1>
+    {% if  'sub-head' in doc %}
+    <h2 class="sub header">{{ doc['sub-head'] }}</h2>
+    {%endif%}
+{% endblock %}
+
+{% block content %}
+    {{ doc['content'] }}
+{% endblock %}
